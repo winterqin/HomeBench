@@ -163,22 +163,22 @@ class home_assistant_dataset(Dataset):
     def __init__(self,tokenizer,use_rag=False):
         self.tokenizer= tokenizer
         if use_rag:
-            f = open("/home/slli/home_assistant/our_dataset/raw_data/rag_test_data.json", "r")
+            f = open(r"E:\Qwen3\HomeBench\dataset\rag_test_data.json", "r")
             self.data = json.loads(f.read())
             f.close()
         else:
-            f = open("/home/slli/home_assistant/our_dataset/raw_data/test_data.jsonl", "r")
+            f = open(r"E:\Qwen3\HomeBench\dataset\test_data.jsonl", "r")
             lines = f.readlines()
             f.close()
-            f_home = open("/home/slli/home_assistant/our_dataset/raw_data/new_home_status_method.jsonl", "r")
+            f_home = open(r"E:\Qwen3\HomeBench\dataset\new_home_status_method.jsonl", "r")
             lines_home = f_home.readlines()
             home_status = {}
             for line in lines_home:
                 data = json.loads(line)
                 home_status[data["home_id"]] = {"home_status": data["home_status"], "method": data["method"]}
             f_home.close()
-            examples = open("/home/slli/home_assistant/our_dataset/raw_data/example1.txt", "r").read()
-            system = open("/home/slli/home_assistant/our_dataset/raw_data/system.txt", "r").read()
+            examples = open(r"E:\Qwen3\HomeBench\dataset\example.txt", "r").read()
+            system = open(r"E:\Qwen3\HomeBench\dataset\system.txt", "r").read()
             self.data = []
             for i in range(len(lines)):
                 case = lines[i]
@@ -348,7 +348,7 @@ def model_test(model_name,use_rag=False,use_few_shot=False,test_type=None):
     if model_name == "llama":
         model_id = '/home/slli/home_assistant/model/llama3-8b-Instruct'
     elif model_name == "qwen":
-        model_id = '/home/slli/home_assistant/model/Qwen2.5-7B-Instruct'
+        model_id = 'E:\Qwen3\models\Qwen3_4B'
     elif model_name == "mistral":
         model_id = '/home/slli/home_assistant/model/Mistral-7B-Instruct-v0.3'
     elif model_name == "gemma":
@@ -423,7 +423,7 @@ def llama_test():
     f.write(json.dumps(res))
 
 def qwen_test():
-    model_id = '/home/slli/home_assistant/model/Qwen2.5-7B-Instruct'
+    model_id = 'E:\Qwen3\models\Qwen3_4B'
     print(torch.cuda.is_available())
     tokenizer = AutoTokenizer.from_pretrained(model_id,padding_side='left')
     model = AutoModelForCausalLM.from_pretrained(
@@ -442,13 +442,13 @@ def qwen_test():
         for i in range(len(generated_texts)):
             res.append({"generated": generated_texts[i], "expected": output_text[i]})
 
-    f = open("/home/slli/home_assistant/our_dataset/raw_data/qwen_test_result.json", "w")
-    f.write(json.dumps(res))
+    with open("E:\Qwen3\HomeBench\outputs\qwen_test_result.json", "w") as f:
+        f.write(json.dumps(res))
 
 
 if __name__ == "__main__":
     # llama_test()
-    model_test("mistral",use_rag=False,use_few_shot=True,test_type="error_input")
+    model_test("qwen",use_rag=False,use_few_shot=True,test_type="error_input")
     # rag_dataset('/home/slli/home_assistant/model/Qwen2.5-7B-Instruct')
     # f = open("/home/slli/home_assistant/our_dataset/raw_data/llama_test_result.json", "r")
     # res = json.loads(f.read())

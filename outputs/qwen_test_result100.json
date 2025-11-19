@@ -1,0 +1,406 @@
+[
+  {
+    "generated": "{guest_bedroom.humidifier.set_intensity(90), balcony.light.set_brightness(83 - 43), master_bedroom.light.set_brightness(65 - 45), error_input, master_bedroom.air_conditioner.set_temperature(23), living_room.curtain.set_degree(0 + 20), study_room.heating.set_temperature(29), study_room.light.turn_off()}",
+    "expected": "'''error_input,balcony.light.set_brightness(40),master_bedroom.light.set_brightness(20),error_input,error_input,living_room.curtain.set_degree(20),error_input,study_room.light.turn_off(),'''"
+  },
+  {
+    "generated": "{garage.air_purifiers.turn_on(), living_room.media_player.set_volume(96 + 48)}",
+    "expected": "'''error_input,error_input,'''"
+  },
+  {
+    "generated": "{bathroom.light.set_brightness(20)}",
+    "expected": "''' bathroom.light.set_brightness(20)'''"
+  },
+  {
+    "generated": "{error_input}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{balcony.aromatherapy.set_intensity(80)}",
+    "expected": "''' balcony.aromatherapy.set_intensity(80)'''"
+  },
+  {
+    "generated": "{living_room.curtain.close()}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{master_bedroom.dehumidifiers.set_intensity(50)}",
+    "expected": "''' master_bedroom.dehumidifiers.set_intensity(50)'''"
+  },
+  {
+    "generated": "{master_bedroom.heating.set_temperature(100)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{bathroom.heating.set_temperature(21)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{garage.blinds.open(), study_room.humidifier.set_intensity(8 + 40), balcony.aromatherapy.set_intensity(70), master_bedroom.dehumidifiers.set_intensity(20), master_bedroom.light.set_brightness(70), guest_bedroom.air_conditioner.set_temperature(24), living_room.air_conditioner.set_temperature(30)}",
+    "expected": "'''error_input,error_input,error_input,error_input,master_bedroom.light.set_brightness(70),guest_bedroom.air_conditioner.set_temperature(24),error_input,'''"
+  },
+  {
+    "generated": "{guest_bedroom.light.set_brightness(60), guest_bedroom.light.set_brightness(30), study_room.heating.set_temperature(33), master_bedroom.heating.set_temperature(24), master_bedroom.heating.set_fan_speed(\"medium\"), living_room.air_conditioner.set_temperature(17), study_room.air_conditioner.set_temperature(20), balcony.light.set_brightness(100), study_room.humidifier.set_intensity(60)}",
+    "expected": "'''error_input,error_input,error_input,error_input,error_input,error_input,study_room.air_conditioner.set_temperature(20),balcony.light.set_brightness(100),study_room.humidifier.set_intensity(60),'''"
+  },
+  {
+    "generated": "{living_room.heating.set_fan_speed(\"high\")}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{corridor.light.set_brightness(90)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{living_room.light.set_brightness(10)}",
+    "expected": "''' living_room.light.set_brightness(10)'''"
+  },
+  {
+    "generated": "{guest_bedroom.aromatherapy.set_intensity(80)}",
+    "expected": "''' guest_bedroom.aromatherapy.set_intensity(80)'''"
+  },
+  {
+    "generated": "{study_room.light.set_brightness(52 + 8)}",
+    "expected": "''' study_room.light.set_brightness(60)'''"
+  },
+  {
+    "generated": "{living_room.curtain.set_degree(0), living_room.dehumidifiers.set_intensity(70)}",
+    "expected": "'''error_input,living_room.dehumidifiers.set_intensity(70),'''"
+  },
+  {
+    "generated": "{balcony.curtain.set_degree(10)}",
+    "expected": "''' balcony.curtain.set_degree(10)'''"
+  },
+  {
+    "generated": "{foyer.aromatherapy.set_intensity(40)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{living_room.curtain.set_degree(90)}",
+    "expected": "''' living_room.curtain.set_degree(90)'''"
+  },
+  {
+    "generated": "{master_bedroom.air_conditioner.turn_on()}",
+    "expected": "''' master_bedroom.air_conditioner.turn_on()'''"
+  },
+  {
+    "generated": "{balcony.media_player.set_volume(68)}",
+    "expected": "''' balcony.media_player.set_volume(70)'''"
+  },
+  {
+    "generated": "{guest_bedroom.light.set_brightness(10)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{guest_bedroom.air_conditioner.set_fan_speed(\"auto\")}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.air_conditioner.set_swing(\"auto\")}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{store_room.dehumidifiers.set_intensity(60)}",
+    "expected": "''' store_room.dehumidifiers.set_intensity(60)'''"
+  },
+  {
+    "generated": "{study_room.air_conditioner.set_temperature(26)}",
+    "expected": "''' study_room.air_conditioner.set_temperature(26)'''"
+  },
+  {
+    "generated": "{guest_bedroom.light.set_brightness(60)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{guest_bedroom.dehumidifiers.set_intensity(40)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{guest_bedroom.air_conditioner.set_swing(\"auto\"), guest_bedroom.air_conditioner.set_temperature(16), master_bedroom.heating.set_temperature(87), corridor.light.turn_off(), study_room.curtain.set_degree(70), corridor.aromatherapy.set_intensity(40), guest_bedroom.light.set_brightness(30)}",
+    "expected": "'''guest_bedroom.air_conditioner.set_swing(auto),guest_bedroom.air_conditioner.set_temperature(16),error_input,error_input,study_room.curtain.set_degree(70),corridor.aromatherapy.set_intensity(40),error_input,'''"
+  },
+  {
+    "generated": "{garage.light.set_brightness(100)}",
+    "expected": "''' garage.light.set_brightness(100)'''"
+  },
+  {
+    "generated": "{master_bedroom.heating.set_temperature(25)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{balcony.curtain.set_degree(70)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{master_bedroom.aromatherapy.set_intensity(80)}",
+    "expected": "''' master_bedroom.aromatherapy.set_intensity(80)'''"
+  },
+  {
+    "generated": "{master_bedroom.dehumidifiers.set_intensity(75), living_room.air_conditioner.set_swing(\"middle\"), living_room.air_conditioner.set_temperature(25), balcony.curtain.set_degree(80)}",
+    "expected": "'''error_input,error_input,error_input,balcony.curtain.set_degree(80),master_bedroom.heating.set_temperature(20),'''"
+  },
+  {
+    "generated": "{bathroom.light.set_brightness(40)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{guest_bedroom.heating.set_fan_speed(\"medium\")}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.humidifier.set_intensity(30), kitchen.water_heater.turn_off(), living_room.heating.set_mode(heat), balcony.light.set_brightness(90), master_bedroom.air_conditioner.set_swing(middle), study_room.air_purifiers.set_fan_speed(high), store_room.dehumidifiers.set_mode(auto), bathroom.light.set_brightness(10), living_room.curtain.set_degree(50), balcony.light.set_brightness(130)}",
+    "expected": "'''study_room.humidifier.set_intensity(30),kitchen.water_heater.turn_off(),error_input,error_input,error_input,error_input,store_room.dehumidifiers.set_mode(auto),error_input,living_room.curtain.set_degree(50),balcony.light.set_brightness(90),'''"
+  },
+  {
+    "generated": "{master_bedroom.humidifier.turn_on(), master_bedroom.humidifier.set_intensity(9)}",
+    "expected": "'''master_bedroom.humidifier.turn_on(),master_bedroom.humidifier.set_intensity(10),'''"
+  },
+  {
+    "generated": "{balcony.blinds.open()}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{garage.light.set_brightness(0)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.dehumidifier.set_intensity(90)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.heating.set_temperature(16)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.dehumidifiers.set_intensity(62)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.heating.set_temperature(21)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{master_bedroom.aromatherapy.turn_off()}",
+    "expected": "''' master_bedroom.aromatherapy.set_intensity(0)'''"
+  },
+  {
+    "generated": "{guest_bedroom.air_purifiers.set_mode(\"sleep\")}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{error_input}",
+    "expected": "''' ding_room.dehumidifiers.set_intensity(40)'''"
+  },
+  {
+    "generated": "{master_bedroom.fan.set_speed(\"high\"), master_bedroom.media_player.set_volume(100), guest_bedroom.air_conditioner.set_swing(\"middle\"), master_bedroom.aromatherapy.set_intensity(10), master_bedroom.curtain.set_degree(70), study_room.air_conditioner.set_temperature(20)}",
+    "expected": "'''error_input,master_bedroom.media_player.set_volume(100),guest_bedroom.air_conditioner.set_swing(up),error_input,master_bedroom.curtain.set_degree(70),study_room.air_conditioner.set_temperature(20),'''"
+  },
+  {
+    "generated": "{foyer.light.set_brightness(83), living_room.aromatherapy.set_intensity(100), living_room.air_purifiers.set_mode(\"sleep\"), balcony.media_player.set_volume(50), error_input, study_room.fan.turn_off(), error_input}",
+    "expected": "'''foyer.light.set_brightness(90),living_room.aromatherapy.set_intensity(100),error_input,error_input,balcony.media_player.set_volume(50),vacuum_robot.charge(),study_room.fan.turn_off(),error_input,'''"
+  },
+  {
+    "generated": "{master_bedroom.media_player.set_volume(70)}",
+    "expected": "''' master_bedroom.media_player.set_volume(70)'''"
+  },
+  {
+    "generated": "{living_room.aromatherapy.set_intensity(40)}",
+    "expected": "''' living_room.aromatherapy.set_intensity(40)'''"
+  },
+  {
+    "generated": "{corridor.aromatherapy.set_intensity(30), garage.light.set_brightness(40), living_room.air_conditioner.set_fan_speed(\"low\"), living_room.media_player.set_volume(0)}",
+    "expected": "'''corridor.aromatherapy.set_intensity(30),error_input,error_input,living_room.media_player.set_volume(0),'''"
+  },
+  {
+    "generated": "{balcony.aromatherapy.set_intensity(100), study_room.curtain.set_degree(50), garage.media_player.set_volume(65), master_bedroom.air_conditioner.set_fan_speed(medium), garage.media_player.set_volume(65)}",
+    "expected": "'''balcony.aromatherapy.set_intensity(100),study_room.curtain.set_degree(50),error_input,master_bedroom.air_conditioner.set_fan_speed(medium),error_input,'''"
+  },
+  {
+    "generated": "{living_room.light.set_brightness(50)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{foyer.aromatherapy.set_intensity(50)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{store_room.light.set_brightness(100)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{living_room.air_conditioner.set_temperature(19)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{master_bedroom.curtain.set_degree(40)}",
+    "expected": "''' master_bedroom.curtain.set_degree(40)'''"
+  },
+  {
+    "generated": "{error_input, error_input, balcony.media_player.set_volume(40)}",
+    "expected": "'''ding_room.air_purifiers.turn_off(),error_input,balcony.media_player.set_volume(40),'''"
+  },
+  {
+    "generated": "{study_room.curtain.set_degree(90), master_bedroom.light.set_brightness(100), master_bedroom.media_player.set_volume(60), study_room.light.set_brightness(60), kitchen.water_heater.set_temperature(70), living_room.light.set_brightness(90)}",
+    "expected": "'''error_input,error_input,master_bedroom.media_player.set_volume(60),error_input,error_input,living_room.light.set_brightness(90),'''"
+  },
+  {
+    "generated": "{厨房.light.set_brightness(60)}",
+    "expected": "''' kitchen.light.set_brightness(60)'''"
+  },
+  {
+    "generated": "{living_room.heating.set_fan_speed(\"high\"), guest_bedroom.air_conditioner.set_temperature(26), foyer.light.set_brightness(80), guest_bedroom.aromatherapy.set_interval(10)}",
+    "expected": "'''living_room.heating.set_fan_speed(high),guest_bedroom.air_conditioner.set_temperature(26),foyer.light.set_brightness(80),error_input,'''"
+  },
+  {
+    "generated": "{guest_bedroom.curtain.set_degree(90)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{store_room.dehumidifiers.set_intensity(10)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{guest_bedroom.heating.set_fan_speed(\"medium\")}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{vacuum_robot.set_cleaning_area(\"foyer\")}",
+    "expected": "''' vacuum_robot.set_cleaning_area(foyer)'''"
+  },
+  {
+    "generated": "{guest_bedroom.aromatherapy.set_intensity(60), guest_bedroom.heating.set_temperature(29)}",
+    "expected": "'''guest_bedroom.aromatherapy.set_intensity(60),error_input,'''"
+  },
+  {
+    "generated": "{error_input}",
+    "expected": "''' ding_room.humidifier.set_intensity(0)'''"
+  },
+  {
+    "generated": "{bathroom.heating.set_mode(\"heat\")}",
+    "expected": "''' bathroom.heating.set_mode(heat)'''"
+  },
+  {
+    "generated": "{living_room.humidifier.set_intensity(80)}",
+    "expected": "''' living_room.humidifier.set_intensity(80)'''"
+  },
+  {
+    "generated": "{study_room.heating.set_temperature(28), error_input, bathroom.heating.set_temperature(16), master_bedroom.light.set_brightness(90), master_bedroom.aromatherapy.set_intensity(68), living_room.media_player.set_volume(40), master_bedroom.media_player.set_volume(80)}",
+    "expected": "'''error_input,master_bedroom.heating.set_temperature(18),bathroom.heating.set_temperature(16),error_input,master_bedroom.aromatherapy.set_intensity(70),living_room.media_player.set_volume(40),error_input,'''"
+  },
+  {
+    "generated": "{living_room.light.set_brightness(83 - (83 * 0.73)), guest_bedroom.dehumidifiers.set_intensity(10), living_room.aromatherapy.set_intensity(70), bathroom.heating.set_temperature(21), living_room.air_conditioner.set_fan_speed(\"low\"), master_bedroom.media_player.set_volume(40), master_bedroom.curtain.set_degree(0 + (0 * 0.80)), master_bedroom.aromatherapy.set_interval(25 + 35), garage.air_purifiers.set_mode(\"sleep\"), living_room.media_player.set_volume(19 + (19 * 0.41))}",
+    "expected": "'''living_room.light.set_brightness(10),guest_bedroom.dehumidifiers.set_intensity(10),living_room.aromatherapy.set_intensity(70),bathroom.heating.set_temperature(21),living_room.air_conditioner.set_fan_speed(low),master_bedroom.media_player.set_volume(40),error_input,master_bedroom.aromatherapy.set_interval(60),garage.air_purifiers.set_mode(sleep),living_room.media_player.set_volume(60),'''"
+  },
+  {
+    "generated": "{garage.light.set_brightness(0)}",
+    "expected": "''' garage.light.set_brightness(0)'''"
+  },
+  {
+    "generated": "{master_bedroom.heating.set_temperature(29)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{master_bedroom.media_player.set_volume(11 + 20)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{store_room.dehumidifiers.set_intensity(70)}",
+    "expected": "''' store_room.dehumidifiers.set_intensity(70)'''"
+  },
+  {
+    "generated": "{master_bedroom.air_purifiers.set_mode(\"sleep\")}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.heating.set_temperature(19), master_bedroom.media_player.set_volume(68), study_room.curtain.set_degree(20), master_bedroom.air_conditioner.set_temperature(29), master_bedroom.air_conditioner.set_temperature(28), living_room.humidifier.set_intensity(80), study_room.light.set_brightness(0)}",
+    "expected": "'''error_input,error_input,study_room.curtain.set_degree(20),master_bedroom.air_conditioner.set_temperature(29),master_bedroom.air_conditioner.set_temperature(17),error_input,error_input,'''"
+  },
+  {
+    "generated": "{store_room.air_purifiers.set_fan_speed(\"high\"), study_room.heating.set_mode(\"medium\"), master_bedroom.air_conditioner.set_temperature(17), study_room.fan.set_speed(\"high\"), bathroom.water_heater.set_temperature(16), study_room.light.turn_off()}",
+    "expected": "'''store_room.air_purifiers.set_fan_speed(high),error_input,master_bedroom.air_conditioner.set_temperature(17),study_room.fan.set_speed(high),error_input,study_room.light.set_brightness(0),'''"
+  },
+  {
+    "generated": "{store_room.light.set_brightness(10)}",
+    "expected": "''' store_room.light.set_brightness(10)'''"
+  },
+  {
+    "generated": "{living_room.aromatherapy.set_intensity(100), guest_bedroom.light.set_brightness(47), study_room.air_conditioner.set_temperature(26), garage.light.set_brightness(40), living_room.humidifier.set_intensity(100)}",
+    "expected": "'''error_input,guest_bedroom.light.set_brightness(40),study_room.air_conditioner.set_temperature(26),garage.light.set_brightness(40),error_input,'''"
+  },
+  {
+    "generated": "{store_room.dehumidifiers.set_intensity(70)}",
+    "expected": "''' store_room.dehumidifiers.set_intensity(70)'''"
+  },
+  {
+    "generated": "{living_room.heating.turn_on()}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{master_bedroom.light.set_brightness(31 + 69)}",
+    "expected": "''' master_bedroom.light.set_brightness(100)'''"
+  },
+  {
+    "generated": "{balcony.light.set_brightness(50), error_input, master_bedroom.air_conditioner.set_temperature(30), living_room.dehumidifiers.set_intensity(50), study_room.humidifier.set_intensity(90)}",
+    "expected": "'''error_input,ding_room.dehumidifiers.set_intensity(10),error_input,error_input,error_input,'''"
+  },
+  {
+    "generated": "{garage.media_player.set_volume(47)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{error_input}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{balcony.curtain.set_degree(70)}",
+    "expected": "''' balcony.curtain.set_degree(70)'''"
+  },
+  {
+    "generated": "{balcony.light.set_brightness(70), living_room.dehumidifiers.set_intensity(70), living_room.air_conditioner.set_temperature(22)}",
+    "expected": "'''error_input,living_room.dehumidifiers.set_intensity(70),living_room.air_conditioner.set_temperature(22),'''"
+  },
+  {
+    "generated": "{master_bedroom.media_player.set_volume(80)}",
+    "expected": "''' master_bedroom.media_player.set_volume(80)'''"
+  },
+  {
+    "generated": "{master_bedroom.curtain.set_degree(90)}",
+    "expected": "''' master_bedroom.curtain.set_degree(90)'''"
+  },
+  {
+    "generated": "{master_bedroom.aromatherapy.set_interval(50)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{study_room.light.set_brightness(61 - (61 * 51 / 100))}",
+    "expected": "''' study_room.light.set_brightness(10)'''"
+  },
+  {
+    "generated": "{garage.air_purifiers.set_fan_speed(\"low\")}",
+    "expected": "''' garage.air_purifiers.set_fan_speed(low)'''"
+  },
+  {
+    "generated": "{vacuum_robot.set_cleaning_area(\"corridor\")}",
+    "expected": "''' vacuum_robot.set_cleaning_area(corridor)'''"
+  },
+  {
+    "generated": "{living_room.media_player.set_volume(20), error_input, store_room.dehumidifiers.set_intensity(62 - 32), ding_room.dehumidifiers.set_intensity(53 + 30), master_bedroom.aromatherapy.set_intensity(30), study_room.dehumidifiers.turn_on()}",
+    "expected": "'''balcony.media_player.set_volume(20),ding_room.light.set_brightness(30),store_room.dehumidifiers.set_intensity(30),ding_room.dehumidifiers.set_intensity(60),error_input,study_room.dehumidifiers.turn_on(),'''"
+  },
+  {
+    "generated": "{corridor.light.turn_off()}",
+    "expected": "''' corridor.light.set_brightness(0)'''"
+  },
+  {
+    "generated": "{master_bedroom.light.set_brightness(30)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{store_room.humidifier.set_intensity(35)}",
+    "expected": "'''error_input'''"
+  },
+  {
+    "generated": "{living_room.humidifier.turn_off()}",
+    "expected": "'''error_input'''"
+  }
+]

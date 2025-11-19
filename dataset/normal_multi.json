@@ -1,0 +1,1 @@
+{"generated": ["master_bedroom.humidifier.turn_on()", "master_bedroom.humidifier.set_intensity(9)"], "expected": ["master_bedroom.humidifier.turn_on()", "master_bedroom.humidifier.set_intensity(10)"]}
